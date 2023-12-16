@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 Dashboard</title>
+    <meta name="description" content="COVID-19 Dashboard">
+
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+
+</head>
+<body>
+    <header>
+        <div class="c-header">
+        <h1>COVID-19 Dashboard</h1>
+        <div>
+
+            <label for="countrySelect">Select a Country:</label>
+            <select class="countrySelect" id="countrySelect" aria-label="Select a country"></select>
+        </div>
+        <p class="flag">flag</p>
+           </div>
+        
+    </header>
+    
+    <main>
+         <div class="loading">
+
+        <div class="loadingIndicator " id="loadingIndicator">Loading</div>
+             <div id="spinner" class="spinner"></div>
+    </div>
+        <div class="chartContainer" id="chartContainer">
+            <canvas id="covidChart" aria-label="COVID-19 Data Bar Chart"></canvas>
+        </div>
+        <div id="dataOptions">
+            <button id="casesButton" aria-label="Show Cases">Cases</button>
+            <button id="deathsButton" aria-label="Show Deaths">Deaths</button>
+            <button id="recoveriesButton" aria-label="Show Recoveries">Recoveries</button>
+        </div>
+
+    </main>
+ 
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
