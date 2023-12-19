@@ -62,7 +62,6 @@ function updateChart(country) {
 
         .then(response => response.json())
         .then(data => {
-          // console.log(data);
        const  flag= document.querySelector('.flag')
        flag.innerHTML = `<img src="${data.countryInfo.flag}" alt="${data.country}">`
 
@@ -130,7 +129,6 @@ fetch(`${apiUrl}/countries`)
   .then((data) => {
     data
     .forEach((country) => {
-        // console.log(data);
         
 
         const option = document.createElement('option');
