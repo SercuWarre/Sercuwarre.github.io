@@ -62,7 +62,7 @@ function updateChart(country) {
 
         .then(response => response.json())
         .then(data => {
-          console.log(data);
+          // console.log(data);
        const  flag= document.querySelector('.flag')
        flag.innerHTML = `<img src="${data.countryInfo.flag}" alt="${data.country}">`
 
